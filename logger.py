@@ -1,3 +1,5 @@
+# NOT TESTED YET
+
 import os
 import logging
 import psutil
@@ -267,4 +269,4 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"\n[x] fatal: {e}")
         agent.terminate()
-```
+# NOT TESTED YET
