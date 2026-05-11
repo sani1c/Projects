@@ -1,0 +1,7 @@
+Each subfolder is a self-contained app with its own dependencies and dev server:
+
+api-server/ — Express REST API that handles all backend logic. Receives number submissions, logs the submitter's IP address, stores everything in PostgreSQL, and exposes endpoints for fetching contributions and statistics.
+
+number-contribution/ — The public-facing React web app. Users visit this to enter and submit their number. Shows the live running total, contributor count, and recent submissions. Also includes the /admin route for viewing the full contribution log with IP addresses.
+
+Each artifact runs as its own service and communicates through a shared reverse proxy, so the frontend and backend are served under one unified domain.
